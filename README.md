@@ -30,8 +30,47 @@
 - 所属メンバーの権限管理、複数人でのリポジトリ管理が容易になる
 
 ## 使ってみよう
-### Git　コマンド
-init, add, commit, checkout, log, HEADの話（そのほかも）
+ここからの説明は、Unix/Linux環境を前提にしています。Windowsの場合は、PowerShellを使用するか読み替えて進めてください。
+### Gitの操作
+1. リポジトリの作成
+    ```bash
+    mkdir sample-repo
+    cd sample-repo
+    git init
+    ```
+2. ファイルの追加
+    ```bash
+    echo "Hello, Git!" > hello.txt
+    ```
+3. コミット
+    ```bash
+    git add hello.txt
+    git commit -m "Initial commit"
+    ```
+    > [!TIP]
+    > コミットメッセージは、変更内容を簡潔に記述するとよいです。
+    > どのように記述するか、チームでルールを決めておく事もあります。
+4. ブランチの作成
+    ```bash
+    git branch develop
+    git checkout develop
+    ```
+5. ファイルの変更
+    ```bash
+    echo "Hello, Git! (develop)" > hello.txt
+    git add hello.txt
+    git commit -m "Update hello.txt"
+    ```
+6. 履歴の確認
+    ```bash
+    git log
+    ```
+    > [!TIP]
+    > お勧めのオプション付きコマンド
+    > ```bash
+    > git log --graph --name-only
+    > ```
+
 
 ### GitHub CLI （GitHubのコマンドラインツール）
 
