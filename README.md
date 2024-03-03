@@ -78,8 +78,7 @@
     ```
 > [!WARNING]
 > マージ先のブランチでもコミットが行われている場合、マージ時にコンフリクトが発生することがあります。
-> コンフリクトが発生した場合は、手動で解消する必要があります。
-
+> コンフリクトが発生した場合は、手動で解消する必要があります。解消方法は[こちら]:https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line
 
 ### GitHub CLI （GitHubのコマンドラインツール）
 GitHub CLIを使うと、GitHubの操作をコマンドラインで行うことができます。
