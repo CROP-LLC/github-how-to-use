@@ -70,9 +70,59 @@
     > ```bash
     > git log --graph --name-only
     > ```
+7. ブランチのマージ
+    ```bash
+    git checkout master
+    git merge develop
+    ```
+    > [!WARNING]
+    > マージ先のブランチでもコミットが行われている場合、マージ時にコンフリクトが発生することがあります。
+    > コンフリクトが発生した場合は、手動で解消する必要があります。
 
 
 ### GitHub CLI （GitHubのコマンドラインツール）
+GitHub CLIを使うと、GitHubの操作をコマンドラインで行うことができます。
+1. GitHub上にリポジトリを作成
+    ```bash
+    gh repo create sample-repo --public
+    ```
+2. リポジトリのクローン
+    ```bash
+    gh repo clone sample-repo
+    cd sample-repo
+    ```
+3. ファイルの追加
+    ```bash
+    echo "Hello, GitHub!" > hello-github.txt
+    git add hello-github.txt
+    git commit -m "Add hello-github.txt"
+    ```
+4. リモートリポジトリへのプッシュ
+    ```bash
+    git push origin main
+    ```
+> [!IMPORTANT]
+> Gitのデフォルトブランチは`master`ですが、GitHubのデフォルトブランチは`main`です。
+> 現在は`main`ブランチを使用する事が多いので、ローカルリポジトリを作成する場合には`main`ブランチを作成することをお勧めします。
+> 何ならGitHub CLIを使ってリポジトリを作成するのがお勧めです。
+5. ブランチの作成
+    ```bash
+    git branch develop
+    git checkout develop
+    ```
+6. ファイルの変更
+    ```bash
+    echo "Hello, GitHub! (develop)" > hello-github.txt
+    git add hello-github.txt
+    git commit -m "Update hello-github.txt"
+    ```
+7. プッシュ
+    ```bash
+    git push origin develop
+    ```
+
+
+
 
 
 [^1]:https://github.blog/jp/2021-01-06-commits-are-snapshots-not-diffs/
