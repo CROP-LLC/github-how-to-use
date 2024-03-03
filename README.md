@@ -125,7 +125,7 @@ GitHub CLIを使うと、GitHubの操作をコマンドラインで行うこと�
 また、レビュアーに対して変更内容を共有し、レビューを依頼することができます。
 
 ここから先はGitHubで説明します！
-よろしくお願いいたします！
+よろしくお願いいたします。
 
 
 [^1]:https://github.blog/jp/2021-01-06-commits-are-snapshots-not-diffs/
