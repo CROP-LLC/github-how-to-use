@@ -1,6 +1,5 @@
 # Git/GitHub講習会
-本講習会では、開発にあたり必要となるGit/GitHubの基本的な役割と使い方を共有します。
-細かな仕様や使い方は、開発の中で調べながら利用することを前提とします。
+本講習会では、開発にあたり必要となるGit/GitHubの基本的な役割と使い方を共有します。  細かな仕様や使い方は、開発の中で調べながら利用することを前提とします。
 
 ## そもそもGitとは
 - 分散型のバージョン管理システム
@@ -13,7 +12,7 @@
 ### Gitの用語
 | 用語 | 説明 |
 | --- | --- |
-| リポジトリ | ファイルやディレクトリの状態を記録する場所。<br/>**ローカルリポジトリ**：開発環境のリポジトリ<br/>**リモートリポジトリ**：GitHubなど |
+| リポジトリ | ファイルやディレクトリの状態を記録する場所。  **ローカルリポジトリ**：開発環境のリポジトリ  **リモートリポジトリ**：GitHubなど |
 | コミット | ファイルやディレクトリの状態を記録すること |
 | ブランチ | 作業を分岐させること |
 | マージ | ブランチの変更を取り込むこと |
@@ -78,7 +77,7 @@
     ```
 > [!WARNING]
 > マージ先のブランチでもコミットが行われている場合、マージ時にコンフリクトが発生することがあります。
-> コンフリクトが発生した場合は、手動で解消する必要があります。解消方法は[こちら]:https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line
+> コンフリクトが発生した場合は、手動で解消する必要があります。解消方法は[こちら](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line)
 
 ### GitHub CLI （GitHubのコマンドラインツール）
 GitHub CLIを使うと、GitHubの操作をコマンドラインで行うことができます。
@@ -121,8 +120,11 @@ GitHub CLIを使うと、GitHubの操作をコマンドラインで行うこと�
     git push origin develop
     ```
 
+## プルリクエストの作り方
+プルリクエストを作成することで、ブランチの変更を取り込むことができます。
+また、レビュアーに対して変更内容を共有し、レビューを依頼することができます。
 
-
+ここから先はGitHubで説明します！
 
 
 [^1]:https://github.blog/jp/2021-01-06-commits-are-snapshots-not-diffs/
