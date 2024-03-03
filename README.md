@@ -30,11 +30,10 @@
 - 所属メンバーの権限管理、複数人でのリポジトリ管理が容易になる
 
 ## 使ってみよう
-
-### gh　コマンド
-なんか書く
-
 ### Git　コマンド
 init, add, commit, checkout, log, HEADの話（そのほかも）
+
+### GitHub CLI （GitHubのコマンドラインツール）
+
 
 [^1]:https://github.blog/jp/2021-01-06-commits-are-snapshots-not-diffs/
